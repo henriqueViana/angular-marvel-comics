@@ -1,0 +1,10 @@
+<ng-container>
+  <div class="home"> 
+    <div class="card" *ngFor="let comics of comics$?.data?.results">
+      <img class="card__image" [src]="comics?.thumbnail?.path + typeThumb + comics?.thumbnail?.extension" />
+      <div class="card__title">{{comics?.title}}</div>
+      <div class="card__pages">Total de páginas: {{comics?.pageCount}}</div>
+      <button class="card__button" (click)="goToDetails(comics?.id)">saber mais</button>
+    </div>
+  </div>
+</ng-container>

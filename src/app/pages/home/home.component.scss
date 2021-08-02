@@ -1,0 +1,16 @@
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .card {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid;
+    text-align: center;
+
+    &__title {
+      font-weight: bold;
+    }
+  }
+}
