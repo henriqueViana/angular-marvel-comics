@@ -36,10 +36,11 @@ export class HomeComponent implements OnInit {
       this.comics$ = res
       this.store.dispatch(add({payload: res}))
     });
-
+    
   }
 
   goToDetails(id: string) {
+    this.router.navigate([`/quadrinhos/${id}`]);
   }
 
 }

@@ -8,6 +8,10 @@ const routes: Routes = [
     component: HomeComponent,
     pathMatch: 'full'
   },
+  {
+    path: 'quadrinhos/:id',
+    loadChildren: () => import('./pages/comics-details/comics-details.module').then(m => m.ComicsDetailsModule)
+  },
 ];
 
 @NgModule({
